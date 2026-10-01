@@ -1,6 +1,6 @@
 # Matching-Inference
 
-## Simulation Scripts
+## Simulation
 
 
 Figure 2 (a).R examines the entrywise performance of the initial estimator obtained using Algorithm 1 and compares it with the double-enhancement algorithm of Tang et al. under one-to-one matching, across different signal magnitudes. It generates Figure 2(a).

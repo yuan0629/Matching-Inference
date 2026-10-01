@@ -25,3 +25,12 @@ Appendix A.R compares the finite-sample variability and Gaussian approximation o
 
 ## Real data
 
+
+raw data.csv was constructed using game-level umpire performance records from the [UmpScorecards data archive](https://umpscorecards.com/data/games) and game information from [the official MLB schedule](https://www.mlb.com/schedule/2025-03-27). It contains the participating teams, assigned umpires, and umpires' performance for the 2025 regular season, together with historical UmpScorecards records from 2015 to 2024.
+
+
+data cleaning.R reads raw data.csv and restricts the main analysis sample to the 2025 regular season so that both sides of the matching market remain fixed throughout the study period. It retains games with an observed Accuracy Above Expected and valid team and umpire indices, verifies that each home team and each umpire appear at most once on each game day, and generates clean data.csv.
+
+
+
+data analysis.R reads clean data.csv and applies the sample-splitting matching learning and evaluation procedure described in the paper. It generates the $p$-values for the ten dates with 15 arrived home teams shown in Table 1.
